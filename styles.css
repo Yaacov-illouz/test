@@ -1,0 +1,77 @@
+@charset "UTF-8";
+h1, h2 {
+  text-align: center;
+}
+
+.title {
+  background-color: #eff0f4;
+  padding: 5px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+button#btn-rechercher-des-livres, button#btn-ajouter-un-livre {
+  background-color: #469388;
+}
+button#btn-ajouter-un-livre {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+button#btn-annuler-les-recherches-des-livres {
+  background-color: #df5a4b;
+}
+
+label {
+  margin-top: 5px;
+}
+
+#form-rechercher-des-livres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.livre {
+  border: 2px solid;
+  width: 80%;
+  background-color: #eff0f4;
+  position: relative;
+  margin: 5px;
+}
+
+#bookmark-ou-corbeille {
+  position: absolute;
+  top: 0; /* Positionne l'élément en haut */
+  right: 0; /* Positionne l'élément à droite */
+  padding: 5px; /* Optionnel : pour ajouter un peu de padding autour du span */
+}
+
+#resultats-recherche, #livres-stockes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#img-livre {
+  height: auto;
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* Styles spécifiques pour les tablettes et plus grands */
+@media (min-width: 600px) {
+  #resultats-recherche, #livres-stockes {
+    justify-content: space-around;
+  }
+  .livre {
+    width: 40%;
+  }
+}/*# sourceMappingURL=styles.css.map */

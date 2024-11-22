@@ -1,0 +1,90 @@
+// Charte graphique
+$gray: #eff0f4;
+$green: #469388;
+$red: #df5a4b;
+
+//Centrer les titres 
+h1, h2{
+    text-align: center;
+}
+
+.title{
+    background-color: $gray;
+    padding: 5px;
+}
+
+// Styles communs pour les boutons
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+
+  // Style spécifique pour les boutons verts
+  &#btn-rechercher-des-livres,
+  &#btn-ajouter-un-livre {
+    background-color: $green;
+  }
+
+  //Centrer le btn ajouter un livre
+  &#btn-ajouter-un-livre {
+    text-align: center;
+    display:block;
+    margin:0 auto;
+  }
+
+  // Style spécifique pour le bouton rouge
+  &#btn-annuler-les-recherches-des-livres {
+    background-color: $red;
+  }
+}
+
+label{
+    margin-top: 5px;
+}
+
+#form-rechercher-des-livres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.livre{
+    border: 2px solid;
+    width: 80%;
+    background-color: $gray;
+    position: relative;
+    margin:5px;
+}
+
+#bookmark-ou-corbeille {
+    position: absolute;
+    top: 0;        /* Positionne l'élément en haut */
+    right: 0;      /* Positionne l'élément à droite */
+    padding: 5px;  /* Optionnel : pour ajouter un peu de padding autour du span */
+}
+
+#resultats-recherche, #livres-stockes{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#img-livre{
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Styles spécifiques pour les tablettes et plus grands */
+@media (min-width: 600px) {
+  #resultats-recherche, #livres-stockes {
+    justify-content: space-around;
+  }
+  .livre{
+    width: 40%;
+  }
+}
